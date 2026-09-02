@@ -8,6 +8,14 @@ export const RecursosAyuda = [
         theme: "lavender",
     },
     {
+        title: "Calculadora dieciochera de choripanes",
+        desc: "Calcula cuantos choripanes, empanadas y terremotos puedes comer este 18 sin romper tu dieta.",
+        link: "/recursos/calculadora-dieciochera",
+        short: "recurso",
+        img: "/images/imgs-dieciocheras/choripan-pebre.png",
+        theme: "coral",
+    },
+    {
         title: "Calculadora de Índice de Masa Corporal (IMC)",
         desc: "Obtén tu IMC y su interpretación nutricional en segundos.",
         link: "/antropometria/calculo-de-indicadores/imc",
