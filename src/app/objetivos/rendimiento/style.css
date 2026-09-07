@@ -1,0 +1,274 @@
+.rendimientoPageSty {
+    padding-bottom: 40px;
+}
+
+/* ============ HERO ============ */
+
+.rendHeroSty {
+    position: relative;
+    padding: 12px 0 56px;
+    overflow: hidden;
+}
+
+.rendHeroWashSty {
+    position: absolute;
+    top: -180px;
+    right: -160px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(103, 61, 230, 0.14) 0%, rgba(140, 133, 255, 0.06) 55%, transparent 75%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.rendHeroContentSty {
+    position: relative;
+    z-index: 1;
+}
+
+.rendEyebrowSty {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-geist-mono), monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #673DE6;
+    margin-bottom: 14px;
+}
+
+.rendEyebrowSty::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, #673DE6, #02B090);
+    border-radius: 2px;
+}
+
+.rendTitleSty {
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+    font-weight: 600;
+    line-height: 1.12;
+    color: #2F1C6A;
+    max-width: 16ch;
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+}
+
+.rendLeadSty {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a4560;
+    max-width: 62ch;
+    margin-bottom: 44px;
+}
+
+.rendLeadSty b {
+    color: #2F1C6A;
+}
+
+/* ============ CONTINUUM (elemento firma) ============ */
+
+.rendContinuumSty {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 6px;
+}
+
+.rendContinuumTrackSty {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    right: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #d94459, #673DE6, #048662);
+    opacity: 0.35;
+}
+
+.rendContinuumStopSty {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 6px;
+}
+
+.rendContinuumDotSty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    font-size: 1.05rem;
+    box-shadow: 0 6px 18px rgba(20, 10, 50, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.rendContinuumStopSty:hover .rendContinuumDotSty,
+.rendContinuumStopSty:focus-visible .rendContinuumDotSty {
+    background: var(--accent);
+    color: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(20, 10, 50, 0.22);
+}
+
+.rendContinuumLabelSty {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #2F1C6A;
+}
+
+.rendContinuumStopSty--coral { --accent: #d94459; }
+.rendContinuumStopSty--violeta { --accent: #673DE6; }
+.rendContinuumStopSty--teal { --accent: #048662; }
+
+/* ============ SECCIONES / TARJETAS ============ */
+
+.rendSectionSty {
+    scroll-margin-top: calc(var(--navbar-height, 105px) + 24px);
+}
+
+.rendCardSty {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 8px 0;
+}
+
+.rendCardSty--coral { --accent: #d94459; --accent-soft: #ffe8ea; }
+.rendCardSty--violeta { --accent: #673DE6; --accent-soft: #f2edfe; }
+.rendCardSty--teal { --accent: #048662; --accent-soft: #effcf0; }
+
+.rendCardMediaSty {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(20, 10, 50, 0.14);
+    flex-shrink: 0;
+}
+
+.rendCardImgSty {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rendCardBadgeSty {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-family: var(--font-geist-mono), monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.rendCardBodySty {
+    display: flex;
+    flex-direction: column;
+}
+
+.rendCardTitleSty {
+    font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+    font-weight: 600;
+    color: #2F1C6A;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.rendTextSty {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: #45415a;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.rendTextSty:last-of-type {
+    margin-bottom: 20px;
+}
+
+.rendTextSty a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration-color: rgba(0, 0, 0, 0.25);
+    text-underline-offset: 2px;
+}
+
+.rendTermSty {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.rendLinkSty {
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .rendCardSty {
+        flex-direction: row;
+        align-items: center;
+        gap: 56px;
+    }
+
+    .rendCardSty--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .rendCardMediaSty {
+        width: 42%;
+    }
+
+    .rendCardBodySty {
+        width: 58%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .rendContinuumSty {
+        gap: 4px;
+    }
+
+    .rendContinuumTrackSty {
+        left: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .rendContinuumDotSty {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .rendContinuumLabelSty {
+        font-size: 0.7rem;
+    }
+}

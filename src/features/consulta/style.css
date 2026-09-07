@@ -1,0 +1,27 @@
+.consultaHomeVideoCardSty {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+}
+
+.consultaHomeVideoRatioSty {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%;
+}
+
+@media (min-width: 500px) {
+    .consultaHomeVideoRatioSty {
+        padding-top: 125%;
+    }
+}
+
+.consultaHomeVideoRatioSty iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -26,7 +26,7 @@ Ejemplo real: `src/app/recursos/activar-semillas/page.jsx` combina `RecursoPageH
 
 La mayoría de las rutas (ver `rutas.md`) no pasan por `src/features`: su JSX vive directo en `page.jsx`. Dos archivos hermanos opcionales acompañan a estas páginas:
 
-- **`style.css`** co-ubicado — estilos específicos de esa ruta, importado directo en el `page.jsx` (ej. `src/app/agendar/style.css`, `src/app/servicios/consulta-nutricional/style.css`).
+- **`style.css`** co-ubicado — estilos específicos de esa ruta, importado directo en el `page.jsx` (ej. `src/app/agendar/style.css`, `src/app/consulta-nutricional-presencial/style.css`).
 - **`datos.jsx`** co-ubicado — cuando el contenido es una tabla/lista de datos separable de la presentación (ej. `src/app/antropometria/evaluacion-fisica/datos.jsx`, `src/app/recursos/porciones-de-alimentos/datos.jsx`, `src/app/antropometria/calculo-de-indicadores/phantom/datos.jsx`).
 
 Esto es distinto de la convención de `src/features/<feature>.constants.js` — esa aplica solo dentro de una feature del barrel; las páginas autocontenidas usan `datos.jsx` en su propia carpeta de ruta.

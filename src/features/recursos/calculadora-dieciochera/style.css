@@ -1,0 +1,337 @@
+.dieciocheraContainerSty {
+    width: 100%;
+}
+
+/* Paleta bandera chilena */
+:root {
+    --dieciochero-azul: #0039A6;
+    --dieciochero-rojo: #D52B1E;
+}
+
+.dieciocheraTituloIconWrapSty {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dieciocheraTituloEmojiSty {
+    font-size: 1.5rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.dieciocheraRojoChileSty {
+    color: var(--dieciochero-rojo);
+    font-weight: 700;
+}
+
+.dieciocheraBotonAzulOutlineSty {
+    border: 2px solid var(--dieciochero-azul);
+    color: var(--dieciochero-azul);
+    background: transparent;
+}
+
+.dieciocheraBotonAzulOutlineSty:hover {
+    background: rgba(0, 57, 166, 0.08);
+    color: var(--dieciochero-azul);
+}
+
+.dieciocheraBotonAzulSty {
+    background: var(--dieciochero-azul);
+    border-color: var(--dieciochero-azul);
+    color: white;
+}
+
+.dieciocheraBotonAzulSty:hover {
+    background: var(--dieciochero-azul);
+    color: white;
+}
+
+.dieciocheraBotonRojoSty {
+    background: var(--dieciochero-rojo);
+    border-color: var(--dieciochero-rojo);
+    color: white;
+}
+
+.dieciocheraBotonRojoSty:hover {
+    background: #b8241a;
+    border-color: #b8241a;
+    color: white;
+}
+
+.dieciocheraResultCardSty {
+    background: white;
+    border: 1px solid #E7E6F2;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(47, 28, 106, 0.06);
+}
+
+.dieciocheraResultNombreSty {
+    color: #767676;
+    font-weight: 600;
+}
+
+.dieciocheraResultCantidadSty {
+    color: #2F1C6A;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+/* Modal */
+.dieciocheraModalOverlaySty {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(20, 12, 46, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.dieciocheraModalContentSty {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.dieciocheraModalCloseBtnSty {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: var(--bs-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Somatotype selector */
+.somatotypeSelectorSty {
+    margin-bottom: 1.5rem;
+}
+
+.somatotypeGridSty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    .somatotypeGridSty {
+        gap: 1rem;
+    }
+}
+
+.somatotypeOptionSty {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.somatotypeInfoTriggerSty {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    margin: 8px 8px 0 0;
+}
+
+.somatotypeInfoIconSty {
+    width: 18px;
+    height: 18px;
+    color: #a1a1aa;
+    cursor: help;
+}
+
+.somatotypeInfoTriggerSty:hover .somatotypeInfoIconSty {
+    color: var(--bs-primary);
+}
+
+@media (min-width: 576px) {
+    .somatotypeInfoIconSty {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.somatotypeInfoTooltipSty {
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 8px;
+    width: 144px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    background: #27272a;
+    padding: 6px 8px;
+    font-size: 10px;
+    color: white;
+    opacity: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    transition: opacity 150ms ease;
+    z-index: 30;
+}
+
+@media (min-width: 576px) {
+    .somatotypeInfoTooltipSty {
+        width: 176px;
+        font-size: 12px;
+    }
+}
+
+.somatotypeInfoTriggerSty:hover .somatotypeInfoTooltipSty {
+    opacity: 1;
+}
+
+.somatotypeRadioSty {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.somatotypeCardSty {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #f3f4f6;
+    padding: 8px;
+    transition: all 150ms ease;
+}
+
+.somatotypeCardSty:hover {
+    border-color: #d1d5db;
+}
+
+.somatotypeCardCheckedSty {
+    border-color: var(--bs-primary);
+    background: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.somatotypeImageSty {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.somatotypeSkeletonSty {
+    width: 100%;
+    aspect-ratio: 347 / 520;
+    border-radius: 8px;
+    background: #e5e7eb;
+    animation: somatotypePulseSty 1.5s ease-in-out infinite;
+}
+
+@keyframes somatotypePulseSty {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.somatotypeHelpSty {
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 1px solid #f3f4f6;
+    background: #fafafa;
+    padding: 12px;
+    font-size: 12px;
+    color: #52525b;
+}
+
+@media (min-width: 576px) {
+    .somatotypeHelpSty {
+        font-size: 14px;
+    }
+}
+
+/* Preferencias: selector de sólidos/líquidos */
+.dieciocheraSelectorSty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dieciocheraCarouselImageWrapSty {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f3f2fb;
+}
+
+.dieciocheraCarouselImageSty {
+    object-fit: cover;
+}
+
+.dieciocheraCarouselArrowSty {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--bs-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(47, 28, 106, 0.2);
+}
+
+.dieciocheraCarouselArrowLeftSty {
+    left: 8px;
+}
+
+.dieciocheraCarouselArrowRightSty {
+    right: 8px;
+}
+
+.dieciocheraFoodNombreSty {
+    color: #2F1C6A;
+    font-weight: 700;
+}
+
+.dieciocheraIngredientesSty {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dieciocheraSectionCardSty {
+    background: white;
+    border: 1px solid #E7E6F2;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(47, 28, 106, 0.06);
+}

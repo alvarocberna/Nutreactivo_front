@@ -47,18 +47,19 @@ export default function Navbar() {
                     <ul className="navbar-nav w-100 d-flex justify-content-end">
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
                             <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold "
-                                href="/servicios/consulta-nutricional">
-                                Consulta nutricional
+                                href="/consulta-nutricional-presencial">
+                                Consulta Presencial
                             </Link>
                         </li>
+                        {/* <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
+                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold "
+                                href="/consulta-nutricional-online">
+                                Consulta Online
+                            </Link>
+                        </li> */}
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
                             <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold " href="/#valores">
                                 Valores
-                            </Link>
-                        </li>
-                        <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
-                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/antropometria/evaluacion-fisica">
-                                Mediciones
                             </Link>
                         </li>
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>

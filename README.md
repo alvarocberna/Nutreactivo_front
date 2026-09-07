@@ -22,7 +22,7 @@ El sitio se compila como **export estático** (`output: 'export'` en `next.confi
 
 ## Estructura del proyecto
 
-- `src/app/` — rutas (Next.js App Router). Solo unas pocas (la home, `/recursos`, `/proyeccion-carrera`) renderizan componentes de `src/features`; el resto son páginas autocontenidas con su propio contenido, `style.css` y a veces `datos.jsx`.
+- `src/app/` — rutas (Next.js App Router). Solo unas pocas (la home, `/recursos`, `/proyeccion-carrera`, `/evaluacion-online`, `/consulta-nutricional-online`) renderizan componentes de `src/features`; el resto son páginas autocontenidas con su propio contenido, `style.css` y a veces `datos.jsx`.
 - `src/features/` — la lógica y el contenido real de las secciones "hub" que sí pasan por el barrel `src/features/index.js`, organizadas por feature.
 - `src/shared/` — componentes transversales (navbar, footer, etc.) e imágenes compartidas.
 - `public/` — assets estáticos servidos directamente.

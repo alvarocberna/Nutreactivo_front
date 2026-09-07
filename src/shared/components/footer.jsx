@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import "../../app/globals.css"
 
 const LINKS = [
-    { label: "Consulta nutricional", href: "/servicios/consulta-nutricional" },
+    { label: "Consulta nutricional", href: "/consulta-nutricional-presencial" },
     { label: "Valores",              href: "/#valores" },
     { label: "Mediciones",           href: "/antropometria" },
     { label: "Recursos",             href: "/recursos" },

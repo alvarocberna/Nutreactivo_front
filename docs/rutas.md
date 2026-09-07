@@ -4,15 +4,18 @@ Todas las rutas viven en `src/app` (Next.js App Router). Para cada una se indica
 
 | Ruta | Origen del contenido |
 |---|---|
-| `/` | `@/features` — `Portada2`, `Consulta`, `Mediciones`, `Valores`, `Objetivos`, `Covertura` + `CajaComentarios` (shared) |
+| `/` | `@/features` — `Portada2`, `Consulta`, `Mediciones`, `PreviewOnline`, `Valores`, `Objetivos`, `Covertura` + `CajaComentarios` (shared). `Consulta` y `PreviewOnline` renderizan cada una un `SectionDivider` (shared) con las etiquetas "Consulta presencial" y "Consulta online"; `PreviewOnline` es solo ese divider más `StepsOverview` (`src/features/online/components/steps-overview.jsx`) |
 | `/agendar` | Autocontenida (`style.css` propio) |
 | `/antropometria` | Autocontenida, índice con links a las subrutas |
 | `/antropometria/calculo-de-indicadores` | Autocontenida, índice |
 | `/antropometria/calculo-de-indicadores/imc` | Autocontenida, calculadora con estado de cliente |
 | `/antropometria/calculo-de-indicadores/phantom` | Autocontenida, `datos.jsx` con la tabla de referencia Phantom |
-| `/antropometria/evaluacion-fisica` | Autocontenida, `datos.jsx` propio — **también** se importa como componente (`EvFisica`) desde `/servicios/consulta-nutricional` |
+| `/antropometria/evaluacion-fisica` | Autocontenida, `datos.jsx` propio — **también** se importa como componente (`EvFisica`) desde `/consulta-nutricional-presencial` |
 | `/articulos` | Autocontenida, índice de los 6 artículos |
 | `/articulos/articulo-1-suplementos-deportivos` … `articulo-6-estrategia-nutricional-deportiva` | Autocontenidas, artículos largos |
+| `/consulta-nutricional-online` | `@/features` — `ConsultaOnline` (`src/features/online`), componente de cliente con flujo de 3 pasos en estado local (`overview` → `evaluacion` → `plan`), la URL no cambia entre pasos |
+| `/consulta-nutricional-presencial` | Autocontenida; importa `EvFisica` desde `/antropometria/evaluacion-fisica/page.jsx` y `Valores` desde `@/features` |
+| `/evaluacion-online` | `@/features` — `EvaluacionOnline` (`src/features/online`), formulario de autoevaluación física con estado de cliente |
 | `/nutricionistas` | Autocontenida, página "sobre mí" |
 | `/objetivos/como-definir-objetivos` | Autocontenida |
 | `/objetivos/definicion` | Autocontenida |
@@ -27,7 +30,6 @@ Todas las rutas viven en `src/app` (Next.js App Router). Para cada una se indica
 | `/recursos/perdida-de-grasa` | Autocontenida, `recurso-article` |
 | `/recursos/volumen-recomendaciones` | Autocontenida, `recurso-article` |
 | `/recursos/porciones-de-alimentos` | Autocontenida, `style.css` + `datos.jsx` propios (recurso interactivo, no usa `recurso-article`) |
-| `/servicios/consulta-nutricional` | Autocontenida; importa `EvFisica` desde `/antropometria/evaluacion-fisica/page.jsx` y `Valores` desde `@/features` |
 
 ## Al agregar una ruta nueva
 
