@@ -8,8 +8,7 @@ export function ResultadoCard({ resultado, onEditarSeleccion }) {
 
     return (
         <div>
-            <h5 className='text-tertiary fw-bold mb-2'>Tu resultado</h5>
-            <p className='text-center fw-semibold mb-4'>
+            <p className='text-center h3 fw-semibold mb-4'>
                 ¡Felicidades! Tu consumo estimado es de {descripcionConsumo}.
             </p>
 

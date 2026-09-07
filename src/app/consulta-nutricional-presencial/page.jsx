@@ -23,7 +23,7 @@ export default function ConsultaNutricional() {
                         <div className='consultaVideoCardSty'>
                             <div className='consultaVideoRatioSty'>
                                 <iframe
-                                    src='https://youtube.com/embed/3m74gRagBaQ'
+                                    src='https://d3da4wrv5yauea.cloudfront.net/consulta-nutricional.mp4'
                                     title='Consulta nutricional Nutreactivo'
                                     allowFullScreen
                                 />

@@ -48,7 +48,7 @@ export default function EvaluacionFisica() {
                         <div className='evalVideoCardSty'>
                             <div className='evalVideoRatioSty'>
                                 <iframe
-                                    src='https://www.youtube.com/embed/w5tOpQVNeOQ'
+                                    src='https://d3da4wrv5yauea.cloudfront.net/evaluacion-fisica.mp4'
                                     title='En qué consiste la evaluación física'
                                     allowFullScreen
                                 />

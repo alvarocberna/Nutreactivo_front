@@ -2,7 +2,7 @@
 export const alimentosFiestasPatrias = [
     {
         id: 'choripan',
-        nombre: 'Choripán chileno',
+        nombre: 'Choripán',
         porcion: '1 unidad (pan + chorizo, ~180g)',
         calorias: 480,
         proteina: 20,

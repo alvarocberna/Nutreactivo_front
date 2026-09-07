@@ -9,7 +9,7 @@ export default function Home() {
       <Portada2 />
       <Consulta />
       <Mediciones />
-      <PreviewOnline />
+      {/* <PreviewOnline /> */}
       <Objetivos />
       <Valores />
       <CajaComentarios />

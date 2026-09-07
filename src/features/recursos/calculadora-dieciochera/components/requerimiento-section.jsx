@@ -7,6 +7,9 @@ export function RequerimientoSection({ value, onChange, onAbrirModal }) {
             </p>
 
             <div className='d-flex flex-column flex-sm-row gap-2'>
+                <button type='button' className='btn dieciocheraBotonAzulOutlineSty text-nowrap' onClick={onAbrirModal}>
+                    Calcular requerimiento
+                </button>
                 <input
                     type='number'
                     className='w-100 form-control'
@@ -14,9 +17,6 @@ export function RequerimientoSection({ value, onChange, onAbrirModal }) {
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                 />
-                <button type='button' className='btn dieciocheraBotonAzulOutlineSty text-nowrap' onClick={onAbrirModal}>
-                    Calcular requerimiento
-                </button>
             </div>
         </div>
     )

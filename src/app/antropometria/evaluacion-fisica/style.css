@@ -38,7 +38,13 @@
 .evalVideoRatioSty {
     position: relative;
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 177.78%;
+}
+
+@media (min-width: 500px) {
+    .evalVideoRatioSty {
+        padding-top: 80%;
+    }
 }
 
 .evalVideoRatioSty iframe {
